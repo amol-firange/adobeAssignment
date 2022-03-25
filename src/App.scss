@@ -1,0 +1,19 @@
+.main-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+    .main-wrapper {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+    .main-wrapper {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}

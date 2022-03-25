@@ -1,0 +1,92 @@
+@import '../variables';
+.cards-wrapper {
+    width: 100%;
+    -webkit-box-shadow: 4px 1px 6px 0px rgba(109,136,157,0.46);
+    -moz-box-shadow: 4px 1px 6px 0px rgba(109,136,157,0.46);
+    box-shadow: 4px 1px 6px 0px rgba(109,136,157,0.46);
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    .left-section {
+        display: flex;
+        .post-dtl {
+            width: 100%;
+            align-items: baseline;
+            display: flex;
+            p {
+                margin: 0 10px;
+                font-size: 0.9em;
+                color: $secondory_color;
+            }
+        }
+    }
+    .right-section {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        margin-top: -20px;
+        
+    }
+    .post-comment {
+        p {
+            margin: 0 0 0 56px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+    .card-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cards-wrapper {
+        width: 49%;
+        .left-section {
+            .post-dtl {
+                flex-direction: column;
+            }
+        }
+        .right-section {
+            margin-top: 0;
+            margin-top: 0;
+    word-break: break-all;
+            .post-comment  {
+                p {
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+    .card-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cards-wrapper {
+        width: 49%;
+        .left-section {
+            .post-dtl {
+                flex-direction: column;
+            }
+        }
+        .right-section {
+            margin-top: 0;
+            margin-top: 0;
+    word-break: break-all;
+            .post-comment  {
+                p {
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+    }
+}

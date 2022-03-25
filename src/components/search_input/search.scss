@@ -1,0 +1,35 @@
+@import '../variables';
+.header {
+    ul {
+        padding: 15px 15px 30px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid $primary_color;
+        li {
+            list-style-type: none;
+            color: $primary_color;
+        }
+    }
+}
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+    input {
+        flex: 2;
+        padding: 14px 10px;
+    border: 1px solid $input_border;
+    }
+    .primary-btn {
+        padding: 15px;
+        border: none;
+        background-color: $primary_color;
+        color: #fff;
+        margin-left: 10px;
+    }
+}
